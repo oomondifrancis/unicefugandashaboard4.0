@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 # Load the dataset
 @st.cache_data
 def load_data():
-    return pd.read_csv('media_data3.csv')
+    return pd.read_csv('unicefmediadata.csv')
 
 df = load_data()
 
@@ -194,6 +194,6 @@ else:
 st.markdown("---")
 col1, col2 = st.columns([4, 1])  # Adjust column width for footer logo and trademark statement
 with col1:
-    st.image('farsightlogo.png', use_column_width='auto', width=5)  # Replace 'farsightlogo.png' with your footer logo file and adjust width as needed
+    st.image('mediawatch.png', use_column_width='auto', width=5)  # capture farsight media wathc logo
 with col2:
     st.markdown("**A Product of Farsight Africa**", unsafe_allow_html=True)
